@@ -1,0 +1,56 @@
+.hamburger {
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 0;
+  background: 0 0;
+  line-height: 18px;
+  vertical-align: middle;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+
+  @include media-up(lg) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 1px;
+    background-color: var(--header-color);
+    border-radius: 2px;
+    color: inherit;
+    opacity: 1;
+
+    &:first-child {
+      top: calc(50% - 4px);
+      transition: top .2s, transform .2s, width .2s, background-color .2s;
+      transition-delay: .2s, 0s;
+
+      .show-menu & {
+        top: 50%;
+        transform: rotate(135deg);
+        transition-delay: .1s, .3s;
+      }
+    }
+
+    &:last-child {
+      top: calc(50% + 4px);
+      transition: top .2s, transform .2s, width .2s, background-color .2s;
+      transition-delay: .2s, 0s;
+
+      .show-menu & {
+        top: 50%;
+        transform: rotate(225deg);
+        transition-delay: .1s, .3s;
+      }
+    }
+  }
+}

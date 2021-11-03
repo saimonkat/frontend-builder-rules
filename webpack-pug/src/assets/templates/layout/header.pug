@@ -1,0 +1,16 @@
+include ../components/mixins/icon
+header.header
+    .container
+        .header__wrapper
+            .header__logo
+                a(href="/")
+                    +icon('logo')
+            .header__block
+                nav.header__navs
+                    a(href="#") Deals
+                    a(href="#") Handys
+                    a(href="#").current Tarife
+                    a(href="#") DSL
+                    a(href="#") Vertragsverlängerung
+                .header__info
+                    a(href="#").btn.btn--primary Request a call

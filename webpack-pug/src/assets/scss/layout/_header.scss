@@ -1,0 +1,38 @@
+.header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        grid-gap: 36px;
+        height: 102px;
+    }
+
+    &__logo {
+        svg {
+            width: 264px;
+            height: 45px;
+        }
+    }
+
+    &__block {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__navs {
+        display: flex;
+        align-items: center;
+
+        a {
+            font-weight: bold;
+            padding: 14px 24px 16px;
+            border-radius: 10px;
+            transition: background-color 300ms;
+
+            &:hover {
+                background-color: #F6F6F8;
+            }
+        }
+    }
+}
