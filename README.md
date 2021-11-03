@@ -38,7 +38,7 @@ Modules install / dev / prod:
 
 ## Webpack + PUG
 
-![PngItem_128848](https://user-images.githubusercontent.com/22715126/140083253-4e5b9ffa-b339-4f78-b583-7f87535e7d40.png)
+<img src="https://user-images.githubusercontent.com/22715126/140083253-4e5b9ffa-b339-4f78-b583-7f87535e7d40.png" width="200">
 
 ### Установка
 
