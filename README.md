@@ -31,11 +31,11 @@
 ### Команды
 
 Modules install / dev / prod:
-    ```shell
-    $ npm i
-    $ npm start
-    $ npm run build
-    ```
+```shell
+$ npm i
+$ npm start
+$ npm run build
+```
 
 ### Структура
 
@@ -57,11 +57,11 @@ Modules install / dev / prod:
 ### Команды
 
 Modules install / dev / prod:
-    ```shell
-    $ npm i
-    $ yarn dev
-    $ yarn build
-    ```
+```shell
+$ npm i
+$ yarn dev
+$ yarn build
+```
 
 ### Структура
 
