@@ -43,8 +43,10 @@ Modules install / dev / prod:
 
 ## Webpack + PUG
 
-<img src="https://user-images.githubusercontent.com/22715126/140085371-761753b1-214d-4289-a2f7-9245e2172dbb.png" height="100" title="Webpack" alt="Webpack">
-<img src="https://user-images.githubusercontent.com/22715126/140083253-4e5b9ffa-b339-4f78-b583-7f87535e7d40.png" height="100" title="Pug" alt="Puh">
+<p>
+    <img src="https://user-images.githubusercontent.com/22715126/140085371-761753b1-214d-4289-a2f7-9245e2172dbb.png" height="100" title="Webpack" alt="Webpack">
+    <img src="https://user-images.githubusercontent.com/22715126/140083253-4e5b9ffa-b339-4f78-b583-7f87535e7d40.png" height="100" title="Pug" alt="Puh">
+</p>
 
 ### Установка
 
