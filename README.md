@@ -45,6 +45,7 @@ Modules install / dev / prod:
 
 <p>
     <img src="https://user-images.githubusercontent.com/22715126/140086271-af88f7e3-8b91-41ed-8d7b-d348d62f8f61.png" height="80" title="Webpack" alt="Webpack">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://user-images.githubusercontent.com/22715126/140083253-4e5b9ffa-b339-4f78-b583-7f87535e7d40.png" height="80" title="Pug" alt="Puh">
 </p>
 
