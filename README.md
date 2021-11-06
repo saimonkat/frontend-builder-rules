@@ -41,6 +41,18 @@ $ npm run build
 
 Структура сборки представляет собой полное разделение на компоненты html, стилей и скриптов на стадии разработки и сборку в объединенные файлы на проде.
 
+- HTML
+
+1. Выносим из страниц общие компоненты header, footer со всех страниц
+![image](https://user-images.githubusercontent.com/22715126/140516193-701d24c8-ddbf-410c-986b-acd453cabb14.png)
+
+2. Header вызываем с параметрами title, body_class(optional), menu current item для каждой страницы
+![image](https://user-images.githubusercontent.com/22715126/140518212-ae60954d-997f-4aba-856d-4a5fe09377e8.png)
+
+3. Main контент страницы также разбиваем на файлы по секциям. Общие секции - в папку elements/template-parts, Уникальные – в папку своей страницы
+![image](https://user-images.githubusercontent.com/22715126/140518362-a634c915-f08b-4928-bb86-f69b8c7321ce.png)
+
+
 ## Webpack + PUG
 
 <p>
@@ -68,5 +80,5 @@ $ yarn build
 ![image](https://user-images.githubusercontent.com/22715126/140514742-6239a30f-31fc-4b89-a209-07dbf2cccb61.png)
 
 Сборка отличается от стандартной несколькими продвинутыми вещами:
-1. Шаблонизатор PUG
+1. Шаблонизатор [PUG](https://gist.github.com/neretin-trike/53aff5afb76153f050c958b82abd9228) (инструкция по ссылке)
 2. Менеджер пакетов yarn, позволяющий использовать относительные пути до изображений и библиотек node_modules
