@@ -60,13 +60,13 @@
    - package-lock.json
    - README.md
    - шапка сайта
-5. Создать favicon сайта из svg
-   https://realfavicongenerator.net/
-   обновить src/favicon/site.webmanifest
-6. Скачать и настроить шрифты
-   https://webfonts.pro/
-   https://fontstorage.com/ru/
-   не забыать про preload в шапке
+5. Создать favicon сайта из svg  
+   https://realfavicongenerator.net/  
+   обновить папку img/favicon/
+6. Скачать и настроить шрифты  
+   https://webfonts.pro/  
+   https://fontstorage.com/ru/  
+   обновить preload шрифтов в шапке
 7. Заранее рассмотреть макеты и установить необходимые библиотеки
 
 ## Webpack
