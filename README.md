@@ -33,7 +33,7 @@
 
     Если у вас уже установлена версия node.js ниже 12, нужно скачать инструмент [nvm](https://github.com/coreybutler/nvm-windows/releases)
 
-    Нахожим здесь файл [nvm-setup.zip](https://github.com/coreybutler/nvm-windows/releases/download/1.1.8/nvm-setup.zip)
+    Находим здесь файл [nvm-setup.zip](https://github.com/coreybutler/nvm-windows/releases/download/1.1.8/nvm-setup.zip)
 
     Запускаем командную строку от *имени администратора* и используем команды для установки нужного пакета:
     
