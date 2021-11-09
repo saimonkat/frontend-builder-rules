@@ -11,7 +11,7 @@
         - [HTML](#html)
         - [SCSS](#scss)
         - [JS](#js)
-- [Webpack + Pug](#webpack-pug)
+- [Webpack + Pug](#webpack--pug)
     - [Установка](#установка-1)
     - [Команды](#команды-1)
     - [Структура](#структура-1)
