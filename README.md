@@ -60,6 +60,7 @@
    - package-lock.json
    - README.md
    - шапка сайта
+
     ![image](https://user-images.githubusercontent.com/22715126/140879431-15918db2-43bd-4dae-83cf-2e4e73ae7376.png)
 5. Создать favicon сайта из svg  
    https://realfavicongenerator.net/  
