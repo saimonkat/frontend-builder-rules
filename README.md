@@ -40,8 +40,8 @@
     
     ```shell
     $ nvm list
-    $ nvm install 12.0.0
-    $ nvm use 12.0.0
+    $ nvm install 12.16.3
+    $ nvm use 12.16.3
     ```
 
 2. Webpack, установленный глобально
