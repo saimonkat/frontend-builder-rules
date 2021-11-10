@@ -2,6 +2,8 @@
 
 ## Содержание
 - [Введение](#intro)
+- [Общая установка](#общая-установка)
+- [Развертка проекта](#развертка-проекта)
 - [Webpack](#webpack)
     - [Установка](#установка)
     - [Команды](#команды)
@@ -9,7 +11,7 @@
         - [HTML](#html)
         - [SCSS](#scss)
         - [JS](#js)
-- [Webpack + Pug](#webpack-pug)
+- [Webpack + Pug](#webpack--pug)
     - [Установка](#установка-1)
     - [Команды](#команды-1)
     - [Структура](#структура-1)
@@ -22,6 +24,53 @@
 
 Склонировать ту или иную сборку можно из этой папки, а также перейдя по ссылке в разделе установк.
 
+## Общая установка
+
+Для работы нам понадобится:
+
+1. node.js версии 12+
+
+    Скачать можно с официального сайта [Node.js](https://nodejs.org/en/)
+
+    Если у вас уже установлена версия node.js ниже 12, нужно скачать инструмент [nvm](https://github.com/coreybutler/nvm-windows/releases)
+
+    Находим здесь файл [nvm-setup.zip](https://github.com/coreybutler/nvm-windows/releases/download/1.1.8/nvm-setup.zip)
+
+    Запускаем командную строку от *имени администратора* и используем команды для установки нужного пакета:
+    
+    ```shell
+    $ nvm list
+    $ nvm install 12.16.3
+    $ nvm use 12.16.3
+    ```
+
+2. Webpack, установленный глобально
+
+    ```shell
+    $ npm install -g webpack
+    ```
+
+## Развертка проекта
+
+1. Скачать последнюю версию сборщика
+2. Запустить установку модулей npm i
+3. Создать новый гит репозиторий для проекта
+4. Занести данные проекта в:
+   - package.json
+   - package-lock.json
+   - README.md
+   - шапка сайта
+
+    ![image](https://user-images.githubusercontent.com/22715126/140879431-15918db2-43bd-4dae-83cf-2e4e73ae7376.png)
+5. Создать favicon сайта из svg  
+   https://realfavicongenerator.net/  
+   обновить папку img/favicon/
+6. Скачать и настроить шрифты  
+   https://webfonts.pro/  
+   https://fontstorage.com/ru/  
+   обновить preload шрифтов в шапке
+7. Заранее рассмотреть макеты и установить необходимые библиотеки
+
 ## Webpack
 
 <img src="https://user-images.githubusercontent.com/22715126/140086271-af88f7e3-8b91-41ed-8d7b-d348d62f8f61.png" height="80" title="Webpack" alt="Webpack">
@@ -29,7 +78,7 @@
 ### Установка
 
 - Скачать папку webpack с текущего репозитория
-- Перейти на [прямой репозиторий со сборкой](https://github.com/saimon322/webpack-2021) и склонировать проект оттуда
+- Или перейти на [прямой репозиторий со сборкой](https://github.com/saimon322/webpack-2021) и склонировать проект оттуда
 
 ### Команды
 
@@ -82,7 +131,7 @@ $ npm run build
 ### Установка
 
 - Скачать папку webpack-pug с текущего репозитория
-- Перейти на [прямой репозиторий со сборкой](https://github.com/smiledie-hub/webpack-assembly) и склонировать проект оттуда
+- Или перейти на [прямой репозиторий со сборкой](https://github.com/smiledie-hub/webpack-assembly) и склонировать проект оттуда
 
 ### Команды
 
