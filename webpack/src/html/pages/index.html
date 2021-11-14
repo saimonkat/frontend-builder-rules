@@ -3,8 +3,27 @@
     menu: {}
 }) %>
 
+<style>
+    .links {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .links a {
+        font-size: 20px;
+    }           
+    .links a:hover {
+        color: #0057FF;
+    }
+</style>
+
 <main class="main">
-    <%=_.template(require('../templates/home/banner.html'))() %>
+    <nav class="links">
+        <a href="home.html">Home</a>
+    </nav>
 </main>
 
 <%=_.template(require('../templates/footer.html'))() %>
