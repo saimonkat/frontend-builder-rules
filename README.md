@@ -48,11 +48,11 @@
 
     - Webpack для первой сборки
 
-    ``` $ npm install -g webpack ```
+        ``` $ npm install -g webpack ```
     
     - Yarn для второй сборки
 
-    ``` $ npm install -g yarn ```
+        ``` $ npm install -g yarn ```
 
 ## Развертка проекта
 
