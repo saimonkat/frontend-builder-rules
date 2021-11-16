@@ -44,11 +44,15 @@
     $ nvm use 12.16.3
     ```
 
-2. Webpack, установленный глобально
+2. Project manager, установленный глобально
 
-    ```shell
-    $ npm install -g webpack
-    ```
+    - Webpack для первой сборки
+
+    ``` $ npm install -g webpack ```
+    
+    - Yarn для второй сборки
+
+    ``` $ npm install -g yarn ```
 
 ## Развертка проекта
 
