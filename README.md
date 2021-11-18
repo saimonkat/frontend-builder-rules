@@ -78,7 +78,7 @@
     - Создать все HTML страницы в папке `html/pages` с шапкой, футером и пустым `<main>`
     - Наполнить index.html навигацией по страницам и стилизовать ее
 
-    ![image](https://user-images.githubusercontent.com/22715126/141695013-3e7b72fb-fddc-4051-bcd5-388e67112cf3.png)
+    ![image](https://user-images.githubusercontent.com/22715126/142408877-8b714046-0092-4727-aac5-a02807cca136.png)
     - Подготовить пустые папки для HTML-секций страниц в папке `html/templates`
     - Подготовить пустые папки для SCSS-секций страниц в папке `scss/pages`
 
