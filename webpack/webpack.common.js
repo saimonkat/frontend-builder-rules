@@ -59,6 +59,8 @@ module.exports = mode => {
             new webpack.DefinePlugin({
                 PRODUCTION: PRODUCTION,
             }),
+            new webpack.IgnorePlugin(/^jquery/),
+            new webpack.IgnorePlugin(/^domready/),
             // new webpack.ProvidePlugin({
             //     $: 'jquery',
             //     jQuery: 'jquery',
