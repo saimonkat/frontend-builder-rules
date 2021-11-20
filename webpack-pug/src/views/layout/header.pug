@@ -3,4 +3,12 @@ include ../components/mixins/icon
 - menu = ['Homepage', 'About', 'Blog', 'Contacts']
 
 header.header
-
+    .container
+        .header__inner
+            a(href="/" class="header__logo logo")
+                +icon('logo', 'icon--logo', 95, 60)
+            nav.header__nav.nav
+                ul.nav__menu.menu
+                    each link, id in menu
+                        li(class=(id === 0 ? "current-menu-item" : ""))
+                            a(href="#")= link

@@ -1,3 +1,25 @@
 .header {
+    padding: 15px 0;
+    background-color: $color-grey;
 
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include media-up(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        font-size: 0;
+        margin-bottom: 30px;
+
+        @include media-up(md) {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
 }

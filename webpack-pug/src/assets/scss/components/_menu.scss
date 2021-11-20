@@ -1,0 +1,26 @@
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include media-up(md) {
+        flex-direction: row;
+    }
+
+    li {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include media-up(md) {
+            margin-bottom: 0;
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
