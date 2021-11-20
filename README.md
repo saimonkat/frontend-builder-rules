@@ -187,8 +187,29 @@ $ yarn build
 
 ### Структура
 
-![image](https://user-images.githubusercontent.com/22715126/140514742-6239a30f-31fc-4b89-a209-07dbf2cccb61.png)
+![image](https://user-images.githubusercontent.com/7847378/142730606-345e8cc8-c89d-46db-a400-6f8bc9e6554e.png)
 
 Сборка отличается от стандартной несколькими вещами:
 1. Шаблонизатор [PUG](https://gist.github.com/neretin-trike/53aff5afb76153f050c958b82abd9228) (инструкция по ссылке)
-2. Роутинг скриптов по страницам
+2. Роутинг скриптов по страницам.
+
+Название JS файл должно быть таким же как и класс тега body на странице. 
+
+![image](https://user-images.githubusercontent.com/7847378/142730783-2e557b73-ab34-4bb2-a02b-50238f6bd0a1.png)
+
+Не забываем подключить его в общмй `assets/js/index.js`
+
+![image](https://user-images.githubusercontent.com/7847378/142731251-731c5bcc-a819-4d2e-841c-b7390790a598.png)
+
+В папке `assets/js/routes` можно создать подпапку с названием страницы и помещать в нее файлы скриптов, относящиеся только к ней.
+К примеру, на главной имеется меню, не повторяющееся на сайте, поэтому создаем файл `menu.js` в папке `assets/js/routes/home`
+
+![image](https://user-images.githubusercontent.com/7847378/142731415-09f33aef-1ef2-40ef-b4a7-fbb95b7c68f1.png)
+
+и подключаем его в `home.js`, соответственно.
+
+![image](https://user-images.githubusercontent.com/7847378/142731443-42755f35-bd02-458b-863e-14121606f749.png)
+
+Общие файлы скриптов для всего сайта создаем в папке `assets/js/utils` и подключаем в `assets/js/routes/common.js`,
+
+![image](https://user-images.githubusercontent.com/7847378/142731580-a76b2f6a-f008-4a39-91a9-114575bf663a.png)
