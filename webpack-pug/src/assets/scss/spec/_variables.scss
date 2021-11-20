@@ -1,4 +1,4 @@
-//GRID
+/* Media queries */
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -8,9 +8,9 @@ $grid-breakpoints: (
     xxl: 1500px,
 );
 
-// FONT
+/* Fonts */
 $font-main: Roboto, -apple-system, system-ui, BlinkMacSystemFont, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-// COLORS
+/* Colors */
 $color-main: #000000;
 $color-grey: #E8E8E8;
