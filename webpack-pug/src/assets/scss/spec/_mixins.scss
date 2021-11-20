@@ -56,3 +56,14 @@
         @include media-down($name)
     }
 }
+
+@mixin font($font_directory, $font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        src: url('#{$font_directory}/#{$font_name}/#{$file_name}.woff2') format('woff2'),
+        url('#{$font_directory}/#{$font_name}/#{$file_name}.woff') format('woff');
+        font-weight: #{$weight};
+        font-style: #{$style};
+        font-display: swap;
+    }
+}

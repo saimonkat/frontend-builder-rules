@@ -1,3 +1,4 @@
+//GRID
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -7,5 +8,10 @@ $grid-breakpoints: (
     xxl: 1500px,
 );
 
-$color-main: #1D1D1F;
-$font: "Inter", sans-serif;
+// FONT
+$font: 'Cormorant', serif;
+$font2: 'Imperial', sans-serif;
+
+// COLORS
+$color-main: #000000;
+$color-grey: #E8E8E8;
