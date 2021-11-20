@@ -1,16 +1,13 @@
 /**
- * pug-loader
+ * Загрузчик Pug для webpack.
  *
- * @example
- *
- * @return {Object} loader конфиг лоадера
- * @see https://www.npmjs.com/package/handlebars-loader
+ * @return {Object} Config
+ * @see https://www.npmjs.com/package/pug-loader
  */
-function loader(options = {}) {
-    return {
-        loader: 'pug-loader',
-        options: options
+
+module.exports = {
+    loader: 'simple-pug-loader',
+    options: {
+        pretty: true
     }
 }
-
-module.exports = loader

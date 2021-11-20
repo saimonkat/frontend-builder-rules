@@ -1,15 +1,10 @@
 /**
- * css-loader
+ * В css-loader интерпретируют @importи url() как import/require().
  *
- * @example
- *
- * @return {Object} loader конфиг лоадера
+ * @return {Object} Config
  * @see https://webpack.js.org/loaders/css-loader/
  */
-function loader() {
-    return {
-        loader: 'css-loader'
-    }
-}
 
-module.exports = loader
+module.exports = {
+    loader: 'css-loader'
+}

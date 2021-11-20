@@ -1,15 +1,10 @@
 /**
- * babel-loader
+ * Этот пакет позволяет переносить файлы JavaScript с помощью Babel и webpack.
  *
- * @example
- *
- * @return {Object} loader конфиг лоадера
+ * @return {Object} Config
  * @see https://webpack.js.org/loaders/babel-loader/
  */
-function loader() {
-    return {
-        loader: "babel-loader"
-    }
-}
 
-module.exports = loader
+module.exports = {
+    loader: "babel-loader"
+}

@@ -1,8 +1,10 @@
-const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
-
 /**
  * Загрузчик веб-пакетов для создания SVG-спрайтов.
  *
+ * @return {Object} Config
  * @see https://github.com/JetBrains/svg-sprite-loader
  */
-module.exports = SpriteLoaderPlugin
+
+module.exports = {
+    loader: 'svg-sprite-loader'
+}

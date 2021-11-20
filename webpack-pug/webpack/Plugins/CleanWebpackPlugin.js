@@ -1,10 +1,7 @@
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 /**
- * Подробный JSdoc
- * @param {Object} options
- * @see ссылка на доки
+ * Плагин webpack для удаления / очистки папок сборки.
+ * @see https://www.npmjs.com/package/clean-webpack-plugin
  */
-module.exports = function createPlugin(options) {
-    return new CleanWebpackPlugin(options)
-};
+module.exports = CleanWebpackPlugin

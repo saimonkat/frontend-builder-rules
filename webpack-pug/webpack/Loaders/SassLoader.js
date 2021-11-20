@@ -1,15 +1,10 @@
 /**
- * sass-loader
+ * агружает файл Sass / SCSS и компилирует его в CSS.
  *
- * @example
- *
- * @return {Object} loader конфиг лоадера
+ * @return {Object} Config
  * @see https://webpack.js.org/loaders/sass-loader/
  */
-function loader() {
-    return {
-        loader: 'sass-loader'
-    }
-}
 
-module.exports = loader
+module.exports = {
+    loader: 'sass-loader'
+}

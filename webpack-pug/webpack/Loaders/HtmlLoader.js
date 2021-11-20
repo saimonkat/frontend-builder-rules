@@ -1,9 +1,8 @@
 /**
- * html-loader
+ * Экспортирует HTML как строку. HTML минимизируется, когда этого требует компилятор.
  *
- * @example
- *
- * @return {Object} loader конфиг лоадера
+ * @param {Object} options
+ * @return {Object} Config
  * @see https://webpack.js.org/loaders/html-loader/
  */
 function loader(options = {}) {

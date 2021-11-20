@@ -5,5 +5,10 @@ const MiniCssExtractPluginLoader = require("../Loaders/MiniCssExtractPluginLoade
 
 module.exports = {
     test: /\.(scss|css)$/,
-    use: [MiniCssExtractPluginLoader, CssLoader, PostcssLoader, SassLoader],
+    use: [
+        MiniCssExtractPluginLoader,
+        CssLoader,
+        PostcssLoader,
+        SassLoader
+    ],
 }

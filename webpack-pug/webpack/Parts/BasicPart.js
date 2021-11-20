@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("../Plugins/HtmlWebpackPlugin");
 const MiniCssExtractPlugin = require("../Plugins/MiniCssExtractPlugin");
 const CleanWebpackPlugin = require("../Plugins/CleanWebpackPlugin");
 const SpriteLoaderPlugin = require("../Plugins/SpriteLoaderPlugin");
+const HtmlWebpackPugPlugin = require("../Plugins/HtmlWebpackPugPlugin");
 const Pug = require("../Presets/Pug");
 const Scripts = require("../Presets/Scripts");
 const Style = require("../Presets/Style");
@@ -33,15 +34,19 @@ module.exports = {
             '@scss': path.join(dirs.src, "assets", "scss"),
             '@images': path.join(dirs.src, "public", "images"),
             '@icons': path.join(dirs.src, "public", "icons"),
+            '@fonts': path.join(dirs.src, "public", "fonts"),
         },
     },
     plugins: [
-        MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({
             filename: "assets/css/style.css",
         }),
-        CleanWebpackPlugin({}),
-        SpriteLoaderPlugin({plainSprite: true}),
-        ...HtmlWebpackPlugin(),
+        new CleanWebpackPlugin(),
+        new SpriteLoaderPlugin({
+            plainSprite: true
+        }),
+        ...(new HtmlWebpackPlugin()),
+        new HtmlWebpackPugPlugin(),
     ],
     module: {
         rules: [

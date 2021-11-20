@@ -1,15 +1,11 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin").loader;
 
 /**
- * MiniCssExtractPluginLoader
+ * Этот плагин извлекает CSS в отдельные файлы. Он создает файл CSS для каждого файла JS, который содержит CSS. Он поддерживает загрузку CSS и SourceMaps по запросу.
+ * Он основан на новой функции webpack v5 и требует для работы webpack 5.
  *
- * @example
- *
- * @return {Object} loader конфиг лоадера
+ * @return {Object} Config
  * @see https://webpack.js.org/plugins/mini-css-extract-plugin/
  */
-function loader() {
-    return MiniCssExtractPlugin
-}
 
-module.exports = loader
+module.exports = MiniCssExtractPlugin

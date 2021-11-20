@@ -1,15 +1,10 @@
 /**
- * postcss-loader
+ * Загрузчик для обработки CSS PostCSS
  *
- * @example
- *
- * @return {Object} loader конфиг лоадера
+ * @return {Object} Config
  * @see https://webpack.js.org/loaders/postcss-loader/
  */
-function loader() {
-    return {
-        loader: 'postcss-loader'
-    }
-}
 
-module.exports = loader
+module.exports = {
+    loader: 'postcss-loader'
+}
