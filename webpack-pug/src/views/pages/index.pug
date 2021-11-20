@@ -1,0 +1,24 @@
+extends ../layout/index
+
+block vars
+    - pageClass = 'index'
+    - headTitle = 'HTML Pages'
+
+block content
+    style.
+        body { display: flex; align-items: center; justify-content: center; }
+        nav { margin: auto; }
+        ul { padding: 0; margin: 0; font-size: 20px; }
+        ul li:not(:last-child) { margin-bottom: 16px; }
+        ul li a:hover { color: dodgerblue; }
+
+    -
+        pages = [
+            {title: "Homepage", url: "/home.html"},
+        ]
+
+    nav
+        ul
+            each item in pages
+                li
+                    a(href=item.url)= item.title
