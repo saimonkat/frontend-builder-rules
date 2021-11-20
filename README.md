@@ -180,7 +180,7 @@ $ npm run build
 
 Modules install / dev / prod:
 ```shell
-$ npm i
+$ yarn
 $ yarn dev
 $ yarn build
 ```

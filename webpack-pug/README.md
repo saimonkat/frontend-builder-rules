@@ -1,17 +1,17 @@
 # Twice pictures
 
-HTML: [http://twice-pictures.one-pix.com/](http://twice-pictures.one-pix.com/)
+HTML: [http://project.sitename.com/](http://project.sitename.com/)
 
 ---
-
-## Running the project
-
-```shell
-    yarn dev
+### Install dependencies
 ```
-
-## Build for production
-
-```shell
-    yarn build
+yarn
+```
+### Running the project
+```
+yarn dev
+```
+### Build for production
+```
+yarn build
 ```
