@@ -1,0 +1,42 @@
+.inline-scroll {
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    display: flex;
+    overflow-x: auto;
+    cursor: grab;  
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__arrows {
+    position: relative;
+    display: grid;
+    gap: 8px;
+    flex-shrink: 0;
+    grid-template-columns: auto auto;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      transform: translateX(-100%);
+      width: 25px;
+      height: 100%;
+      background: linear-gradient(to right, transparent, #fff);
+    }
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+}
