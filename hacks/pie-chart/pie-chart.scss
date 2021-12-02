@@ -1,0 +1,101 @@
+.scores {
+    &-chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media-up(sm) {
+            flex-direction: row;
+        }
+
+        &__pie {
+            width: 120px;
+            height: 120px;
+            position: relative;
+            margin-bottom: 16px;
+
+            @include media-up(sm) {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 0;
+                margin-right: 24px;
+                flex-shrink: 0;
+            }
+
+            @include media-up(lg) {
+                margin-right: 48px;
+            }
+
+            &-text {
+                font-weight: normal;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #7D7D7D;
+
+                @include media-up(md) {
+                    font-size: 16px;
+                }
+
+                @include media-up(lg) {
+                    font-size: 18px;
+                }
+
+                span {
+                    font-size: 24px;
+                    color: #212327;
+
+                    @include media-up(md) {
+                        font-size: 32px;
+                    }
+
+                    @include media-up(lg) {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+
+        &__legend {
+            @include media-up(md) {
+                column-count: 2;
+                column-gap: 24px;
+            }
+
+            @include media-up(lg) {
+                column-gap: 48px;
+            }
+        }
+    }
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 16px;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    &__color {
+        display: block;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    &__size {
+        color: #DDDDDD;
+    }
+}
