@@ -1,6 +1,6 @@
-# Twice pictures
+# Projectname
 
-HTML: [http://project.sitename.com/](http://project.sitename.com/)
+Domain: http://project.sitename.com/
 
 ---
 ### Install dependencies
