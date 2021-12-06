@@ -1,4 +1,4 @@
-# Projectname
+# Projectname Frontend
 
 Requirements: node.js 12+, webpack
 
