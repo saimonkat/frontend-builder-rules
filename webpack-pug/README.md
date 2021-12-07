@@ -1,17 +1,20 @@
-# Twice pictures
+# Projectname Frontend
 
-HTML: [http://project.sitename.com/](http://project.sitename.com/)
+Requirements: node.js 12+, webpack
+
+Domain: http://project.sitename.com/
 
 ---
+
 ### Install dependencies
-```
-yarn
-```
+
+    $ yarn
+  
 ### Running the project
-```
-yarn dev
-```
+  
+    $ yarn dev
+
 ### Build for production
-```
-yarn build
-```
+
+    $ yarn build
+  
