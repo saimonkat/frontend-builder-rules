@@ -27,6 +27,8 @@
 
 Скачаь ту или иную сборку можно прямо из этой папки.
 
+В конце статьи также содержатся важные дополнения в виде готовых решений и измнений node_modules.
+
 ## Общая установка
 
 Для работы нам понадобится:
@@ -42,20 +44,20 @@
     Запускаем командную строку от *имени администратора* и используем команды для установки нужного пакета:
     
     ```shell
-    $ nvm list
-    $ nvm install 12.16.3
-    $ nvm use 12.16.3
+    nvm list
+    nvm install 12.16.3
+    nvm use 12.16.3
     ```
 
 2. Project manager, установленный глобально
 
     - Webpack для первой сборки
 
-        ``` $ npm install -g webpack ```
+        ``` npm install -g webpack ```
     
     - Yarn для второй сборки
 
-        ``` $ npm install -g yarn ```
+        ``` npm install -g yarn ```
 
 ## Развертка проекта
 
@@ -99,9 +101,9 @@
 
 Packages install / dev / prod:
 ```shell
-$ npm i
-$ npm start
-$ npm run build
+npm i
+npm start
+npm run build
 ```
 
 ### Структура
@@ -183,9 +185,9 @@ $ npm run build
 
 Packages install / dev / prod:
 ```shell
-$ yarn
-$ yarn dev
-$ yarn build
+yarn
+yarn dev
+yarn build
 ```
 
 ### Структура
@@ -231,13 +233,13 @@ $ yarn build
 
 Порядок использования следующий:
 
-1. Устанавливаем patch-package (с помощью npm или yarn)
+1. Устанавливаем пакет `patch-package` (с помощью `npm` или `yarn`):
 
         npm i patch-package
 
         yarn add patch-package postinstall-postinstall
         
-2. Добавляем вызов path-package  в package.json:
+2. Добавляем вызов `path-package`  в package.json:
 
     ```diff
      "scripts": {
@@ -247,7 +249,7 @@ $ yarn build
 
 3. Вносим необходимые изменения напрямую в node_modules
 
-4. Запускаем из консоли команду patch-package указав имя измененной библиотеки:
+4. Запускаем из консоли команду `patch-package`, указав имя измененной библиотеки:
 
         (npx | yarn) patch-package package-name
     
@@ -259,9 +261,7 @@ $ yarn build
 
 5. Коммитим все изменения, включая package.json и новый .patch файл 
 
-Отлично, изменение пакета попало в репозиторий.  
-Теперь, чтобы при установке зависимостей применились наши изменения, остается запустить команду postinstall.  
-Поэтому в README.md дописываем инструкцию для установки зависимостей (npm / yarn):
+Отлично, изменение пакета попало в репозиторий. Теперь, чтобы при установке зависимостей применились наши изменения, остается запустить команду `postinstall`. Поэтому в README.md проекта дописываем инструкцию для установки зависимостей (`npm` / `yarn`):
     
     npm i
     npm run postinstall
