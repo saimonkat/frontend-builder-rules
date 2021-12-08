@@ -60,7 +60,7 @@
 ## Развертка проекта
 
 1. Скачать последнюю версию сборщика
-2. Запустить установку модулей npm i
+2. Запустить установку модулей
 3. Создать новый гит репозиторий для проекта
 4. Занести данные проекта в:
    - package.json
@@ -97,7 +97,7 @@
 
 ### Команды
 
-Modules install / dev / prod:
+Packages install / dev / prod:
 ```shell
 $ npm i
 $ npm start
@@ -181,7 +181,7 @@ $ npm run build
 
 ### Команды
 
-Modules install / dev / prod:
+Packages install / dev / prod:
 ```shell
 $ yarn
 $ yarn dev
