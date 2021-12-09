@@ -228,8 +228,9 @@ yarn build
 
 - [Swiper](https://swiperjs.com/swiper-api) `npm i swiper` – для лучших слайдеров
 - [Fancybox](https://fancyapps.com/docs/ui/quick-start/) `npm i @fancyapps/ui` – для лучших модальных окон и галерей
-- [GSAP](https://github.com/greensock/GSAP) `npm i gsap` – для лучших анимаций и параллаксов
-- [imaskjs](https://imask.js.org/guide.html) `npm i imask` – для лучших масок форм
+- [Gsap](https://github.com/greensock/GSAP) `npm i gsap` – для лучших анимаций и параллаксов
+- [Imask](https://imask.js.org/guide.html) `npm i imask` – для лучших масок форм
+- [Fullpage](https://github.com/alvarotrigo/fullpage.js) `npm i fullpage.js` – для лучшего поэкранного скролла
 - [SortableJS](https://github.com/SortableJS/Sortable) `npm i sortablejs` – для лучшиих drag-and-drop списков
 
 ### Готовые решения
