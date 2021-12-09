@@ -224,11 +224,13 @@ yarn build
 
 ### Библиотеки
 
-Ниже приведен список наиболее часто используемых библиотек со ссылкой на документацию и командой для установки
+Ниже приведен список наиболее часто используемых библиотек со ссылкой на документацию и командой для установки.
 
-- [Swiper](https://swiperjs.com/swiper-api) `npm i swiper` для лучших слайдеров
-- [Fancybox](https://fancyapps.com/docs/ui/quick-start/) `npm i @fancyapps/ui` для лучших модальных окон и галерей
-- [SortableJS](https://github.com/SortableJS/Sortable) `npm i sortablejs` для лучшиих drag-and-drop списков 
+- [Swiper](https://swiperjs.com/swiper-api) `npm i swiper` – для лучших слайдеров
+- [Fancybox](https://fancyapps.com/docs/ui/quick-start/) `npm i @fancyapps/ui` – для лучших модальных окон и галерей
+- [GSAP](https://github.com/greensock/GSAP) `npm i gsap` – для лучших анимаций и параллаксов
+- [imaskjs](https://imask.js.org/guide.html) `npm i imask` – для лучших масок форм
+- [SortableJS](https://github.com/SortableJS/Sortable) `npm i sortablejs` – для лучшиих drag-and-drop списков
 
 ### Готовые решения
 
