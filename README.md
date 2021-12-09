@@ -276,15 +276,15 @@ yarn build
 
 Поэтому в `README.md` проекта дописываем инструкцию для установки зависимостей (`npm` / `yarn`):
     
-    ```diff
-     npm i
-    +  npm run postinstall
-    ```
+```diff
+ npm i
++  npm run postinstall
+```
     
 или
 
-    ```diff
-     yarn
-    +  yarn postinstall
-    ```
+```diff
+ yarn
++  yarn postinstall
+```
     
