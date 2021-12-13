@@ -121,7 +121,7 @@ HTML-файлы в данной сборке используют [EJS](https://
     ```
 
 - If условие
-    ```html
+    ```js
    <% if(title) { %>
         
     <% } else { %>
@@ -130,14 +130,14 @@ HTML-файлы в данной сборке используют [EJS](https://
     ```
     
 - For цикл
-    ```html
+    ```jsp
     <% for (var i = 1; i <= 10; i++) { %>
         
     <% } %>
     ```
     
 - Подключение файла
-    ```html
+    ```php
     <%=_.template(require('../templates/part.html'))() %>
     ```
     
