@@ -113,6 +113,42 @@ npm run build
 
 #### HTML
 
+HTML-файлы в данной сборке используют [EJS](https://ejs.co/) синтаксис, ниже приведены все используемые конcтрукции:
+
+- Подключение файла
+    ```html
+    <%=_.template(require('../templates/part.html'))() %>
+    ```
+    
+- Подключение файла с параметрами
+    ```html
+    <%=_.template(require('../templates/index.html'))({
+        title: "Homepage",
+        pages: [
+            {title: "Homepage", url: "homepage.html"},
+            {title: "About", url: "about.html"},
+        ]
+    }) %>
+    ```
+- Использование переданных переменных в подключаемом файле
+    ```html
+    <h1><%=title%></h1>
+    <ul>
+        <% for (var i = 0; i < pages.length; i++) { %>
+            <li><a href="<%= pages[i].url %>"><%= pages[i].title %></a></li>
+        <% } %>
+    </ul>
+    ```
+    
+- Цикл for
+    ```html
+    <% for (var i = 1; i <= 10; i++) { %>
+        <%=_.template(require('../templates/slide-' + i + '.html'))() %>
+    <% } %>
+    ```
+    
+Порядок работы:
+
 1. Выносим из страниц общие компоненты header, footer со всех страниц  
 
     ![image](https://user-images.githubusercontent.com/22715126/140516193-701d24c8-ddbf-410c-986b-acd453cabb14.png)
