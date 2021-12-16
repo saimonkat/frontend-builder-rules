@@ -2,7 +2,7 @@
     margin-top: 36px;
     &__inner{
         display: flex;
-        background-color: $mono-1;
+        background-color: #fff;
         border-radius: 10px;
         @include media-up(lg){
             padding: 24px 24px 24px 0px;
@@ -59,12 +59,12 @@
                 justify-content: center;
                 .swiper-pagination-bullet{
                     background-color: transparent;
-                    border: 1px solid $blue-3;
+                    border: 1px solid #0033A4;;
                     transition: background-color .3s, width .3s;
                     border-radius: 4px;
                     opacity: 1;
                     &-active{
-                        background-color: $blue-3;
+                        background-color: #0033A4;;
                         width: 24px;
                     }
                 }
@@ -120,7 +120,7 @@
                 position: absolute;
                 width: 2px;
                 height: 100%;
-                background-color: $blue-2;
+                background-color: #358DDF;
                 left:0;
                 top: 0;
             }
@@ -130,7 +130,7 @@
     .product-head{
         &__article{
             @include t-14-150;
-            color: $mono-4;
+            color: #999EA8;
             margin-bottom: 4px;
         }
         &__title{
@@ -147,7 +147,7 @@
             &-link{
                 cursor: pointer;
                 @include input-16-130;
-                color: $blue-3;
+                color: #0033A4;
             }
         }
         &__info{
@@ -161,11 +161,11 @@
                     margin-top: 0;
                 }
                 &__name{
-                    color: $mono-5;
+                    color: #374154;
                 }
                 &__link{
                     margin-left: 8px;
-                    color: $blue-3;
+                    color: #0033A4;
                 }
             }
         }
@@ -178,27 +178,27 @@
             }
             &-desc{
                 width: fit-content;
-                color: $mono-5;
+                color: #374154;
                 @include t-14-150;
                 @include media-down(xs){
                     margin: 8px 0px;
                 }
             }
             &-learn{
-                background-color: $blue-3;
-                color: $mono-1;
+                background-color: #0033A4;;
+                color: #fff;
                 margin: 12px 24px 0px 0px;
                 @include btn-16-130;
             }
             &-test{
                 margin-top: 12px;
-                border: 1px solid $blue-3;
-                color: $blue-3;
+                border: 1px solid #0033A4;;
+                color: #0033A4;;
                 @include btn-16-130;
                 transition: .25s background, .25s color;
                 &:hover{
-                    color: $mono-1;
-                    background-color: $blue-3;
+                    color: #fff;
+                    background-color: #0033A4;;
                 }
             }
             &-learn, &-test{
