@@ -1,0 +1,226 @@
+.product-head{
+    margin-top: 36px;
+    &__inner{
+        display: flex;
+        background-color: $mono-1;
+        border-radius: 10px;
+        @include media-up(lg){
+            padding: 24px 24px 24px 0px;
+        }
+        @include media-down(md){
+            flex-direction: column;
+        }
+    }
+    .product__right{
+        margin-top: 16px;
+    }
+    @include media-up(lg){
+        .product__left{
+            flex: 1;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+        .product__right{
+            flex: 1;
+            margin: 0px 0px 0px 10px;
+        }
+    }
+    .product-gallery{
+        @include media-up(lg){
+            display: grid;
+        }
+        &__slider{
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            @include media-up(lg){
+                padding-left: 66px;
+                grid-area: 1 / -1;
+            }
+            &-item{ 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include media-up(lg){
+                    justify-content: flex-end;
+                }
+    
+                &-image{
+                    max-width: 600px;
+                    width: 100%;
+                    height: 100%;
+                    @include media-up(lg){
+                        max-width: 513px;
+                    }                
+                }
+            }
+            &-pagination{
+                display: flex;
+                justify-content: center;
+                .swiper-pagination-bullet{
+                    background-color: transparent;
+                    border: 1px solid $blue-3;
+                    transition: background-color .3s, width .3s;
+                    border-radius: 4px;
+                    opacity: 1;
+                    &-active{
+                        background-color: $blue-3;
+                        width: 24px;
+                    }
+                }
+                @include media-up(md){
+                    display: none;
+                }
+            }
+            &-prev,&-next{
+                display: none;
+                @include media-between(md,md){
+                    display: flex;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 50%;
+                    width: 36px;
+                    height: 36px;
+                    transform: translateY(-50%);
+                    z-index: 2;
+                }
+            }
+            &-prev{
+                left: 0;
+            }
+            &-next{
+                right: 0;
+            }
+        }
+        &__thumbs{
+            display: none;
+            @include media-up(lg){
+                display: flex;
+            }
+            max-width: 66px;
+            max-height: 360px;
+            grid-area: 1 / -1;
+            overflow: hidden;
+            &-item {
+                height: 56px !important;
+                margin-bottom: 16px;
+                position: relative;
+                cursor: pointer;
+                img{
+                    object-fit: contain;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            .swiper-slide-thumb-active:before{
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                background-color: $blue-2;
+                left:0;
+                top: 0;
+            }
+        }
+    }
+
+    .product-head{
+        &__article{
+            @include t-14-150;
+            color: $mono-4;
+            margin-bottom: 4px;
+        }
+        &__title{
+            @include h-24-140;
+            margin-bottom: 36px;
+        }
+        &__desc{
+            @include t-16-170;
+            &--extra{
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .5s;
+            }
+            &-link{
+                cursor: pointer;
+                @include input-16-130;
+                color: $blue-3;
+            }
+        }
+        &__info{
+            margin: 16px 0px;
+            @include media-up(md){
+                margin: 16px 0px 36px;
+            }
+            &-item{
+                margin-bottom: 8px;
+                &:last-child{
+                    margin-top: 0;
+                }
+                &__name{
+                    color: $mono-5;
+                }
+                &__link{
+                    margin-left: 8px;
+                    color: $blue-3;
+                }
+            }
+        }
+        &__cta{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            &-price{
+                @include h-24-140;
+            }
+            &-desc{
+                width: fit-content;
+                color: $mono-5;
+                @include t-14-150;
+                @include media-down(xs){
+                    margin: 8px 0px;
+                }
+            }
+            &-learn{
+                background-color: $blue-3;
+                color: $mono-1;
+                margin: 12px 24px 0px 0px;
+                @include btn-16-130;
+            }
+            &-test{
+                margin-top: 12px;
+                border: 1px solid $blue-3;
+                color: $blue-3;
+                @include btn-16-130;
+                transition: .25s background, .25s color;
+                &:hover{
+                    color: $mono-1;
+                    background-color: $blue-3;
+                }
+            }
+            &-learn, &-test{
+                padding: 14px 24px;
+                border-radius: 10px;
+                text-align: center;
+                @include media-down(xs){
+                    width: 100%;
+                    margin: 16px 0px 0px;
+                }
+            }
+            @include media-up(sm){
+               &-price{
+                   margin-right: 24px;
+                   @include h-28-130;
+                   white-space: nowrap;
+               }
+               &-desc{
+                   width: 47%;
+               }
+            }
+        }
+    }
+    
+}
