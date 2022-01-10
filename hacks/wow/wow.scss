@@ -1,0 +1,18 @@
+.wow {
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+
+  &.wow-init {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.wow.fadeInUp {
+  transform: translateY(50px);
+
+  &.wow-init {
+    transform: translateY(0);
+  }  
+}
