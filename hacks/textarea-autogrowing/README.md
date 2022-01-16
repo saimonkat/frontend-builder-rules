@@ -1,6 +1,6 @@
 # Textarea autogrowing
 
-Автоизменение высоты от вводимого текста
+Автоизменение высоты textarea от вводимого текста
 
 Статья - https://css-tricks.com/the-cleanest-trick-for-autogrowing-textareas/
 
