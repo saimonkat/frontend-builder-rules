@@ -18,7 +18,7 @@ body {
   background-color: #fff;
   min-width: 320px;
   min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: var(--app-height);
   overflow-x: hidden;
   position: relative;
   -webkit-font-smoothing: antialiased;
